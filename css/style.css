@@ -1,0 +1,150 @@
+html{
+  scroll-behavior: smooth; /* smooth out the scrolling */
+}
+
+main{
+  margin: 40px; 
+  padding: 20px;
+}
+
+/*main content accessibility button */
+#skip {
+  position: relative;
+  top: -40px;
+  left:10px;
+  transition: top 1s;
+}
+
+#skip:focus{
+    top: 5px;
+    transition: 1s;
+    left:10px;
+    
+}
+
+.centered{
+    text-align: center;
+    
+}
+
+header{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Styling the navigation bar */
+.navbar {
+  background-color: #ffffff; /* Background color */
+  overflow: hidden; /* Ensure the navbar doesn't overflow its container */
+  width: 100%;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  /* float: center; Float the links to the center */
+  color: rgb(0, 0, 0); /* Text color */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove default underline */
+  padding: 15px; 
+  margin: 5px; 
+  border-radius: 10%;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #000000; /* Background color on hover */
+  color: rgb(255, 255, 255); /* Text color on hover */
+  border-radius: 10%;
+  padding: 15px; 
+  margin: 5px;
+  transition: 0.5s;
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 15px; 
+  margin: 5px; 
+}
+
+nav ul li {
+  display: inline; /* Display list items horizontally */
+  margin: 15px;
+}
+
+.photos {
+  width: 300px;
+  
+}
+
+.image-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  
+}
+.image-grid img{
+  width: auto;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  max-width: 100%;
+  display: inline-block;
+  margin-top: 2rem;
+  filter: grayscale(100%);
+  
+}
+
+.image-grid img:hover{
+  filter: none;
+  transition: all 0.35s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+        scroll-behavior: auto; /* Disable smooth scrolling */
+  }
+
+  *{
+        transition: 0s !important;
+  }
+}
+
+/* dark theme automatic switch */
+@media (prefers-color-scheme: dark) {
+  .navbar {
+      background: #000000;
+      color: white;
+     }
+  .navbar a{
+    color:white;
+  }
+  body {
+      background: #000000;
+      color: white;
+     }
+  main {
+      background: #000000;
+      color: white;
+     }
+  header{
+    background: #000000;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 760px){
+  .image-grid{
+    grid-template-columns: 45% 45%;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 995px){
+  .image-grid{
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 20px;
+  }
+}
