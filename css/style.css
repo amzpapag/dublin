@@ -28,7 +28,6 @@ main{
 }
 
 header{
-    background-color: #ffffff;
     color: rgb(0, 0, 0);
     margin: 5px;
     padding: 30px;
@@ -36,26 +35,26 @@ header{
 }
 
 /* Styling the navigation bar */
-.navbar {
-  background-color: #ffffff; /* Background color */
+nav {
+  color: black;
   overflow: hidden; /* Ensure the navbar doesn't overflow its container */
   width: 100%;
   text-align: center;
 }
 
 /* Style the links inside the navigation bar */
-.navbar a {
+nav a {
   /* float: center; Float the links to the center */
   color: rgb(0, 0, 0); /* Text color */
   text-align: center; /* Center the text */
   text-decoration: none; /* Remove default underline */
-  padding: 15px; 
+  padding: 15px 15px; 
   margin: 5px; 
   border-radius: 10%;
 }
 
 /* Change the color of links on hover */
-.navbar a:hover {
+nav a:hover {
   background-color: #000000; /* Background color on hover */
   color: rgb(255, 255, 255); /* Text color on hover */
   border-radius: 10%;
@@ -66,13 +65,23 @@ header{
 
 nav ul {
   list-style-type: none; /* Remove bullet points */
-  padding: 15px; 
+  padding: 15px 15px; 
   margin: 5px; 
 }
 
 nav ul li {
-  display: inline; /* Display list items horizontally */
+  display: inline-block; /*makes the nav bar stack better*/
   margin: 15px;
+}
+
+.current {
+  font-weight:bold;
+
+
+}
+
+.current::before{
+  content: "\2618";
 }
 
 .photos {
@@ -80,7 +89,7 @@ nav ul li {
   
 }
 
-.blog-grid{
+.blog-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
@@ -98,7 +107,7 @@ nav ul li {
 
 .image-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: repeat(auto-fill, minmax(200px,1ft)); 
   justify-content: center;
   
 }
@@ -149,12 +158,20 @@ p{
 
 /* dark theme automatic switch */
 @media (prefers-color-scheme: dark) {
-  .navbar {
+  nav {
       background: #000000;
       color: white;
      }
-  .navbar a{
+  nav a{
     color:white;
+  }
+  nav a:hover{
+    background-color: #ffffff; /* Background color on hover */
+    color: rgb(0, 0, 0); /* Text color on hover */
+    border-radius: 10%;
+    padding: 15px; 
+    margin: 5px;
+    transition: 0.5s;
   }
   body {
       background: #000000;
