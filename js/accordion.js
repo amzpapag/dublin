@@ -12,3 +12,19 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+document.querySelector('.openAll').addEventListener('click', function() {
+    var accContents = document.querySelectorAll('.panel');
+    for (i = 0; i < accContents.length; i++) {
+      accContents[i].style.display = 'block';
+      accContents[i].style.maxHeight = accContents[i].scrollHeight + "px";
+    }
+  });
+
+document.querySelector('.closeAll').addEventListener('click', function() {
+var accContents = document.querySelectorAll('.panel');
+for (i = 0; i < accContents.length; i++) {
+    accContents[i].style.display = 'none';
+    accContents[i].style.maxHeight = accContents[i].scrollHeight + "px";
+}
+});
