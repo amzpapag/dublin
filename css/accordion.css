@@ -1,0 +1,52 @@
+
+.accordion {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #a1cca5;
+    color: #111d13;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    /* outline: none; */
+    font-size: 20px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #709775;
+    color: white;
+    
+    font-weight: bolder;
+  }
+  
+  .accordion:after {
+    content: '\2618';
+    color: #111d13;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  
+  
+  .active:after {
+    content: "\2212";
+    color: white;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    transition: max-height 1s ease-in;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .panel {
+          transition:none;
+    }
+  }
