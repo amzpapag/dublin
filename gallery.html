@@ -1,16 +1,18 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- https://www.favicon.cc/ -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>Gallery</title>
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel = "stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 
-<a href = "#main" id = "skip">Skip to Main Content</a>
+<a href = "#main" class = "skip">Skip to Main Content</a>
 
 <header class="centered">
     <h1>Exploring Ireland: A Study Abroad Journey</h1>
@@ -21,28 +23,390 @@
             <li><a href="kilkenny.html">Kilkenny & Glendalough</a></li>
             <li><a href="galway.html">Galway</a></li>
             <li><a href="cliffs.html">Cliffs of Moher</a></li>
+            <li><a href="statues.html">Statues</a></li>
+            <li><a href="art.html">Public Art</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="gallery.html" class="current"> Gallery</a></li>
+            <li><a href="gallery.html" class="current">Gallery</a></li>
         </ul>
     </nav>
 </header>
-<main>
+<main id="main">
 <section class="page-title">
     <h2>Gallery</h2>
   </section>
 
-<img src="images/5-10/5-10ArchOutFront.jpg" alt="">
-<img src="images/5-10/5-10Book.jpg" alt="">
-<img src="images/5-14/5-14Boat.jpg" alt="">
-<img src="images/5-13/5-13Girlies.jpg" alt="">
-<img src="images/5-10/5-10Food.jpg" alt="">
-<img src="images/5-7/5-7ColorfulTree.jpg" alt="">
-<img src="images/5-8/5-8GraftonStreet.jpg" alt="">
-<img src="images/5-8/5-8StPTiles.jpg" alt="">
+<!-- <img src="images/5-8/5-8GraftonStreet.jpg" alt="">
+<img src="images/5-8/5-8StPTiles.jpg" alt=""> -->
 
+ <div class="gallery-grid">
+
+    <a href="images/5-19/5-19Cliffs.jpg" data-lightbox="gallery" data-title="Cliffs">
+        <img src="images/5-19/5-19Cliffs.jpg" alt="Cliffs">
+    </a>
+    <a href="images/5-19/5-19Cows.jpg" data-lightbox="gallery" data-title="Cows">
+        <img src="images/5-19/5-19Cows.jpg" alt="Cows">
+    </a>
+    <a href="images/5-19/5-19MeOnCliffs.jpg" data-lightbox="gallery" data-title="Me On Cliffs">
+        <img src="images/5-19/5-19MeOnCliffs.jpg" alt="Me On Cliffs">
+    </a>
+    <a href="images/5-19/5-19MorningWalk.jpg" data-lightbox="gallery" data-title="Morning Walk">
+        <img src="images/5-19/5-19MorningWalk.jpg" alt="Morning Walk">
+    </a>
+    <a href="images/5-19/5-19Trail.jpg" data-lightbox="gallery" data-title="Trail">
+        <img src="images/5-19/5-19Trail.jpg" alt="Trail">
+    </a>
+    
+
+    <a href="images/5-18/5-18Bar.jpg" data-lightbox="gallery" data-title="Bar">
+        <img src="images/5-18/5-18Bar.jpg" alt="Bar">
+    </a>
+    <a href="images/5-18/5-18Beach.jpg" data-lightbox="gallery" data-title="Beach">
+        <img src="images/5-18/5-18Beach.jpg" alt="Beach">
+    </a>
+    <a href="images/5-18/5-18Busking.jpg" data-lightbox="gallery" data-title="Busking">
+        <img src="images/5-18/5-18Busking.jpg" alt="Busking">
+    </a>
+    <a href="images/5-18/5-18FishChips.jpg" data-lightbox="gallery" data-title="Fish & Chips">
+        <img src="images/5-18/5-18FishChips.jpg" alt="Fish & Chips">
+    </a>
+    <a href="images/5-18/5-18Houses.jpg" data-lightbox="gallery" data-title="Houses">
+        <img src="images/5-18/5-18Houses.jpg" alt="Houses">
+    </a>
+    <a href="images/5-18/5-18Market.jpg" data-lightbox="gallery" data-title="Market">
+        <img src="images/5-18/5-18Market.jpg" alt="Market">
+    </a>
+    <a href="images/5-18/5-18Mural.jpg" data-lightbox="gallery" data-title="Mural">
+        <img src="images/5-18/5-18Mural.jpg" alt="Mural">
+    </a>
+    <a href="images/5-18/5-18OldGames.jpg" data-lightbox="gallery" data-title="Old Games">
+        <img src="images/5-18/5-18OldGames.jpg" alt="Old Games">
+    </a>
+    <a href="images/5-18/5-18Tech.jpg" data-lightbox="gallery" data-title="Tech">
+        <img src="images/5-18/5-18Tech.jpg" alt="Tech">
+    </a>
+    
+
+    <a href="images/5-17/5-17Connection.jpg" data-lightbox="gallery" data-title="Connection">
+        <img src="images/5-17/5-17Connection.jpg" alt="Connection">
+    </a>
+    <a href="images/5-17/5-17food.jpg" data-lightbox="gallery" data-title="Food">
+        <img src="images/5-17/5-17food.jpg" alt="Food">
+    </a>
+    <a href="images/5-17/5-17Map.jpg" data-lightbox="gallery" data-title="Map">
+        <img src="images/5-17/5-17Map.jpg" alt="Map">
+    </a>
+    <a href="images/5-17/5-17murphys.jpg" data-lightbox="gallery" data-title="Murphy's">
+        <img src="images/5-17/5-17murphys.jpg" alt="Murphy's">
+    </a>
+    <a href="images/5-17/5-17Music.jpg" data-lightbox="gallery" data-title="Music">
+        <img src="images/5-17/5-17Music.jpg" alt="Music">
+    </a>
+    <a href="images/5-17/5-17Sweny.jpg" data-lightbox="gallery" data-title="Sweny">
+        <img src="images/5-17/5-17Sweny.jpg" alt="Sweny">
+    </a>
+    <a href="images/5-17/5-17Swing.jpg" data-lightbox="gallery" data-title="Swing">
+        <img src="images/5-17/5-17Swing.jpg" alt="Swing">
+    </a>
+    <a href="images/5-17/5-17TopFloor.jpg" data-lightbox="gallery" data-title="Top Floor">
+        <img src="images/5-17/5-17TopFloor.jpg" alt="Top Floor">
+    </a>
+    <a href="images/5-17/5-17Ulysess.jpg" data-lightbox="gallery" data-title="Ulysses">
+        <img src="images/5-17/5-17Ulysess.jpg" alt="Ulysses">
+    </a>
+    <a href="images/5-17/5-17View.jpg" data-lightbox="gallery" data-title="View">
+        <img src="images/5-17/5-17View.jpg" alt="View">
+    </a>
+    
+    <a href="images/5-16/5-16Churros.jpg" data-lightbox="gallery" data-title="Churros">
+        <img src="images/5-16/5-16Churros.jpg" alt="Churros">
+    </a>
+    <a href="images/5-16/5-16ClosingHouse.jpg" data-lightbox="gallery" data-title="Closing House">
+        <img src="images/5-16/5-16ClosingHouse.jpg" alt="Closing House">
+    </a>
+    <a href="images/5-16/5-16CoffeeShop.jpg" data-lightbox="gallery" data-title="Coffee Shop">
+        <img src="images/5-16/5-16CoffeeShop.jpg" alt="Coffee Shop">
+    </a>
+    <a href="images/5-16/5-16FirstApartments.jpg" data-lightbox="gallery" data-title="First Apartments">
+        <img src="images/5-16/5-16FirstApartments.jpg" alt="First Apartments">
+    </a>
+    <a href="images/5-16/5-16Sandwhich.jpg" data-lightbox="gallery" data-title="Sandwich">
+        <img src="images/5-16/5-16Sandwhich.jpg" alt="Sandwich">
+    </a>
+    <a href="images/5-16/5-16Walk2Class.jpg" data-lightbox="gallery" data-title="Walk to Class">
+        <img src="images/5-16/5-16Walk2Class.jpg" alt="Walk to Class">
+    </a>
+    <a href="images/5-16/5-16WalkHome.jpg" data-lightbox="gallery" data-title="Walk Home">
+        <img src="images/5-16/5-16WalkHome.jpg" alt="Walk Home">
+    </a>
+    <a href="images/5-16/5-16Walking.jpg" data-lightbox="gallery" data-title="Walking">
+        <img src="images/5-16/5-16Walking.jpg" alt="Walking">
+    </a>
+    
+
+    <a href="images/5-15/5-15Bar.jpg" data-lightbox="gallery" data-title="Bar">
+        <img src="images/5-15/5-15Bar.jpg" alt="Bar">
+    </a>
+    <a href="images/5-15/5-15Inside.jpg" data-lightbox="gallery" data-title="Inside">
+        <img src="images/5-15/5-15Inside.jpg" alt="Inside">
+    </a>
+    <a href="images/5-15/5-15Lunch.jpg" data-lightbox="gallery" data-title="Lunch">
+        <img src="images/5-15/5-15Lunch.jpg" alt="Lunch">
+    </a>
+    <a href="images/5-15/5-15Map.jpg" data-lightbox="gallery" data-title="Map">
+        <img src="images/5-15/5-15Map.jpg" alt="Map">
+    </a>
+    <a href="images/5-15/5-15Microsoft.jpg" data-lightbox="gallery" data-title="Microsoft">
+        <img src="images/5-15/5-15Microsoft.jpg" alt="Microsoft">
+    </a>
+    <a href="images/5-15/5-15MicrosoftBuilding.jpg" data-lightbox="gallery" data-title="Microsoft Building">
+        <img src="images/5-15/5-15MicrosoftBuilding.jpg" alt="Microsoft Building">
+    </a>
+    <a href="images/5-15/5-15Trees.jpg" data-lightbox="gallery" data-title="Trees">
+        <img src="images/5-15/5-15Trees.jpg" alt="Trees">
+    </a>
+    <a href="images/5-15/5-15View.jpg" data-lightbox="gallery" data-title="View">
+        <img src="images/5-15/5-15View.jpg" alt="View">
+    </a>
+    
+
+    <a href="images/5-14/5-14Boat.jpg" data-lightbox="gallery" data-title="Boat">
+        <img src="images/5-14/5-14Boat.jpg" alt="Boat">
+    </a>
+    <a href="images/5-14/5-14CuteShop.jpg" data-lightbox="gallery" data-title="Cute Shop">
+        <img src="images/5-14/5-14CuteShop.jpg" alt="Cute Shop">
+    </a>
+    <a href="images/5-14/5-14Dart.jpg" data-lightbox="gallery" data-title="Dart">
+        <img src="images/5-14/5-14Dart.jpg" alt="Dart">
+    </a>
+    <a href="images/5-14/5-14Dinner.jpg" data-lightbox="gallery" data-title="Dinner">
+        <img src="images/5-14/5-14Dinner.jpg" alt="Dinner">
+    </a>
+    <a href="images/5-14/5-14Pier.jpg" data-lightbox="gallery" data-title="Pier">
+        <img src="images/5-14/5-14Pier.jpg" alt="Pier">
+    </a>
+    <a href="images/5-14/5-14Walk.jpg" data-lightbox="gallery" data-title="Walk">
+        <img src="images/5-14/5-14Walk.jpg" alt="Walk">
+    </a>
+    
+
+    <a href="images/5-13/5-13Girlies.jpg" data-lightbox="gallery" data-title="Girlies">
+        <img src="images/5-13/5-13Girlies.jpg" alt="Girlies">
+    </a>
+    <a href="images/5-13/5-13Guinness.jpg" data-lightbox="gallery" data-title="Guinness">
+        <img src="images/5-13/5-13Guinness.jpg" alt="Guinness">
+    </a>
+    <a href="images/5-13/5-13GuinnessGone.jpg" data-lightbox="gallery" data-title="Guinness Gone">
+        <img src="images/5-13/5-13GuinnessGone.jpg" alt="Guinness Gone">
+    </a>
+    <a href="images/5-13/5-13Raincoats.jpg" data-lightbox="gallery" data-title="Raincoats">
+        <img src="images/5-13/5-13Raincoats.jpg" alt="Raincoats">
+    </a>
+    <a href="images/5-13/5-13Suncast.jpg" data-lightbox="gallery" data-title="Suncast">
+        <img src="images/5-13/5-13Suncast.jpg" alt="Suncast">
+    </a>
+    <a href="images/5-13/5-13Sunset.jpg" data-lightbox="gallery" data-title="Sunset">
+        <img src="images/5-13/5-13Sunset.jpg" alt="Sunset">
+    </a>
+    
+
+    <a href="images/5-12/5-12BlackCab.jpg" data-lightbox="gallery" data-title="Black Cab">
+        <img src="images/5-12/5-12BlackCab.jpg" alt="Black Cab">
+    </a>
+    <a href="images/5-12/5-12DunluceCastle.jpg" data-lightbox="gallery" data-title="Dunluce Castle">
+        <img src="images/5-12/5-12DunluceCastle.jpg" alt="Dunluce Castle">
+    </a>
+    <a href="images/5-12/5-12Friends.jpg" data-lightbox="gallery" data-title="Friends">
+        <img src="images/5-12/5-12Friends.jpg" alt="Friends">
+    </a>
+    <a href="images/5-12/5-12GiantsCausway.jpg" data-lightbox="gallery" data-title="Giants Causeway">
+        <img src="images/5-12/5-12GiantsCausway.jpg" alt="Giants Causeway">
+    </a>
+    <a href="images/5-12/5-12Queen.jpg" data-lightbox="gallery" data-title="Queen">
+        <img src="images/5-12/5-12Queen.jpg" alt="Queen">
+    </a>
+    <a href="images/5-12/5-12Stairs.jpg" data-lightbox="gallery" data-title="Stairs">
+        <img src="images/5-12/5-12Stairs.jpg" alt="Stairs">
+    </a>
+    <a href="images/5-12/5-12Stew.jpg" data-lightbox="gallery" data-title="Stew">
+        <img src="images/5-12/5-12Stew.jpg" alt="Stew">
+    </a>
+    <a href="images/5-12/5-12Titanic.jpg" data-lightbox="gallery" data-title="Titanic">
+        <img src="images/5-12/5-12Titanic.jpg" alt="Titanic">
+    </a>
+    
+
+
+    <a href="images/5-11/5-11Antlers.jpg" data-lightbox="gallery" data-title="Antlers">
+        <img src="images/5-11/5-11Antlers.jpg" alt="Antlers">
+    </a>
+    <a href="images/5-11/5-11Arches.jpg" data-lightbox="gallery" data-title="Arches">
+        <img src="images/5-11/5-11Arches.jpg" alt="Arches">
+    </a>
+    <a href="images/5-11/5-11Creek.jpg" data-lightbox="gallery" data-title="Creek">
+        <img src="images/5-11/5-11Creek.jpg" alt="Creek">
+    </a>
+    <a href="images/5-11/5-11inLake.jpg" data-lightbox="gallery" data-title="In Lake">
+        <img src="images/5-11/5-11inLake.jpg" alt="In Lake">
+    </a>
+    <a href="images/5-11/5-11KDetail1.jpg" data-lightbox="gallery" data-title="K Detail 1">
+        <img src="images/5-11/5-11KDetail1.jpg" alt="K Detail 1">
+    </a>
+    <a href="images/5-11/5-11KDetail2.jpg" data-lightbox="gallery" data-title="K Detail 2">
+        <img src="images/5-11/5-11KDetail2.jpg" alt="K Detail 2">
+    </a>
+    <a href="images/5-11/5-11KilkennyGallery.jpg" data-lightbox="gallery" data-title="Kilkenny Gallery">
+        <img src="images/5-11/5-11KilkennyGallery.jpg" alt="Kilkenny Gallery">
+    </a>
+    <a href="images/5-11/5-11KilkennyGate.jpg" data-lightbox="gallery" data-title="Kilkenny Gate">
+        <img src="images/5-11/5-11KilkennyGate.jpg" alt="Kilkenny Gate">
+    </a>
+    <a href="images/5-11/5-11KilkennyManuscript.jpg" data-lightbox="gallery" data-title="Kilkenny Manuscript">
+        <img src="images/5-11/5-11KilkennyManuscript.jpg" alt="Kilkenny Manuscript">
+    </a>
+    <a href="images/5-11/5-11KilkennyRoom1.jpg" data-lightbox="gallery" data-title="Kilkenny Room 1">
+        <img src="images/5-11/5-11KilkennyRoom1.jpg" alt="Kilkenny Room 1">
+    </a>
+    <a href="images/5-11/5-11KOutside.jpg" data-lightbox="gallery" data-title="K Outside">
+        <img src="images/5-11/5-11KOutside.jpg" alt="K Outside">
+    </a>
+    <a href="images/5-11/5-11Lake.jpg" data-lightbox="gallery" data-title="Lake">
+        <img src="images/5-11/5-11Lake.jpg" alt="Lake">
+    </a>
+    <a href="images/5-11/5-11PlantsOnRuin.jpg" data-lightbox="gallery" data-title="Plants on Ruin">
+        <img src="images/5-11/5-11PlantsOnRuin.jpg" alt="Plants on Ruin">
+    </a>
+    <a href="images/5-11/5-11Ruin1.jpg" data-lightbox="gallery" data-title="Ruin 1">
+        <img src="images/5-11/5-11Ruin1.jpg" alt="Ruin 1">
+    </a>
+    <a href="images/5-11/5-11Sheep.jpg" data-lightbox="gallery" data-title="Sheep">
+        <img src="images/5-11/5-11Sheep.jpg" alt="Sheep">
+    </a>
+    <a href="images/5-11/5-11TombStones.jpg" data-lightbox="gallery" data-title="Tomb Stones">
+        <img src="images/5-11/5-11TombStones.jpg" alt="Tomb Stones">
+    </a>
+    <a href="images/5-11/5-11Tower.jpg" data-lightbox="gallery" data-title="Tower">
+        <img src="images/5-11/5-11Tower.jpg" alt="Tower">
+    </a>
+    <a href="images/5-11/5-11walkingTrail.jpg" data-lightbox="gallery" data-title="Walking Trail">
+        <img src="images/5-11/5-11walkingTrail.jpg" alt="Walking Trail">
+    </a>
+    <a href="images/5-11/5-11Welcome.jpg" data-lightbox="gallery" data-title="Welcome">
+        <img src="images/5-11/5-11Welcome.jpg" alt="Welcome">
+    </a>
+    
+
+    <a href="images/5-10/5-10ArchOutFront.jpg" data-lightbox="gallery" data-title="Arch Out Front">
+        <img src="images/5-10/5-10ArchOutFront.jpg" alt="Arch Out Front">
+    </a>
+    <a href="images/5-10/5-10Book.jpg" data-lightbox="gallery" data-title="Book">
+        <img src="images/5-10/5-10Book.jpg" alt="Book">
+    </a>
+    <a href="images/5-10/5-10ComeFrom.jpg" data-lightbox="gallery" data-title="Come From">
+        <img src="images/5-10/5-10ComeFrom.jpg" alt="Come From">
+    </a>
+    <a href="images/5-10/5-10EndSign.jpg" data-lightbox="gallery" data-title="End Sign">
+        <img src="images/5-10/5-10EndSign.jpg" alt="End Sign">
+    </a>
+    <a href="images/5-10/5-10EpicSign.jpg" data-lightbox="gallery" data-title="Epic Sign">
+        <img src="images/5-10/5-10EpicSign.jpg" alt="Epic Sign">
+    </a>
+    <a href="images/5-10/5-10Food.jpg" data-lightbox="gallery" data-title="Food">
+        <img src="images/5-10/5-10Food.jpg" alt="Food">
+    </a>
+    <a href="images/5-10/5-10OutNight.jpg" data-lightbox="gallery" data-title="Out at Night">
+        <img src="images/5-10/5-10OutNight.jpg" alt="Out at Night">
+    </a>
+    <a href="images/5-10/5-10Passport.jpg" data-lightbox="gallery" data-title="Passport">
+        <img src="images/5-10/5-10Passport.jpg" alt="Passport">
+    </a>
+    <a href="images/5-10/5-10Rooftop.jpg" data-lightbox="gallery" data-title="Rooftop">
+        <img src="images/5-10/5-10Rooftop.jpg" alt="Rooftop">
+    </a>
+    <a href="images/5-10/5-10Seating.jpg" data-lightbox="gallery" data-title="Seating">
+        <img src="images/5-10/5-10Seating.jpg" alt="Seating">
+    </a>
+    <a href="images/5-10/5-10Stamping.jpg" data-lightbox="gallery" data-title="Stamping">
+        <img src="images/5-10/5-10Stamping.jpg" alt="Stamping">
+    </a>
+    
+
+    <a href="images/5-9/5-9Alley.jpg" data-lightbox="gallery" data-title="Alley">
+        <img src="images/5-9/5-9Alley.jpg" alt="Alley">
+    </a>
+    <a href="images/5-9/5-9FishNChips.jpg" data-lightbox="gallery" data-title="Fish and Chips">
+        <img src="images/5-9/5-9FishNChips.jpg" alt="Fish and Chips">
+    </a>
+    <a href="images/5-9/5-9LeoBurdock.jpg" data-lightbox="gallery" data-title="Leo Burdock">
+        <img src="images/5-9/5-9LeoBurdock.jpg" alt="Leo Burdock">
+    </a>
+    <a href="images/5-9/5-9Noshington.jpg" data-lightbox="gallery" data-title="Noshington">
+        <img src="images/5-9/5-9Noshington.jpg" alt="Noshington">
+    </a>    
+
+
+    <a href="images/5-8/5-8GraftonStreet.jpg" data-lightbox="gallery" data-title="Grafton Street">
+        <img src="images/5-8/5-8GraftonStreet.jpg" alt="Grafton Street">
+    </a>
+    <a href="images/5-8/5-8PadThai.jpg" data-lightbox="gallery" data-title="Pad Thai">
+        <img src="images/5-8/5-8PadThai.jpg" alt="Pad Thai">
+    </a>
+    <a href="images/5-8/5-8StainGlassInteractive.jpg" data-lightbox="gallery" data-title="Stain Glass Interactive">
+        <img src="images/5-8/5-8StainGlassInteractive.jpg" alt="Stain Glass Interactive">
+    </a>
+    <a href="images/5-8/5-8StainGlassWindow.jpg" data-lightbox="gallery" data-title="Stain Glass Window">
+        <img src="images/5-8/5-8StainGlassWindow.jpg" alt="Stain Glass Window">
+    </a>
+    <a href="images/5-8/5-8StPartricksCath.jpg" data-lightbox="gallery" data-title="St. Patrick's Cathedral">
+        <img src="images/5-8/5-8StPartricksCath.jpg" alt="St. Patrick's Cathedral">
+    </a>
+    <a href="images/5-8/5-8StPTiles.jpg" data-lightbox="gallery" data-title="St. Patrick's Tiles">
+        <img src="images/5-8/5-8StPTiles.jpg" alt="St. Patrick's Tiles">
+    </a>
+    
+
+    <a href="images/5-7/5-7Barracks.jpg" data-lightbox="gallery" data-title="Barracks">
+        <img src="images/5-7/5-7Barracks.jpg" alt="Barracks">
+    </a>
+    <a href="images/5-7/5-7BusTourStop.jpg" data-lightbox="gallery" data-title="Bus Tour Stop">
+        <img src="images/5-7/5-7BusTourStop.jpg" alt="Bus Tour Stop">
+    </a>
+    <a href="images/5-7/5-7BusTourStop2.jpg" data-lightbox="gallery" data-title="Bus Tour Stop 2">
+        <img src="images/5-7/5-7BusTourStop2.jpg" alt="Bus Tour Stop 2">
+    </a>
+    <a href="images/5-7/5-7Church.jpg" data-lightbox="gallery" data-title="Church">
+        <img src="images/5-7/5-7Church.jpg" alt="Church">
+    </a>
+    <a href="images/5-7/5-7ColorfulTree.jpg" data-lightbox="gallery" data-title="Colorful Tree">
+        <img src="images/5-7/5-7ColorfulTree.jpg" alt="Colorful Tree">
+    </a>
+    <a href="images/5-7/5-7Famine.jpg" data-lightbox="gallery" data-title="Famine Memorial">
+        <img src="images/5-7/5-7Famine.jpg" alt="Famine Memorial">
+    </a>
+    <a href="images/5-7/5-7FuballyVibe.jpg" data-lightbox="gallery" data-title="Fubally Vibe">
+        <img src="images/5-7/5-7FuballyVibe.jpg" alt="Fubally Vibe">
+    </a>
+    <a href="images/5-7/5-7FumballyFood.jpg" data-lightbox="gallery" data-title="Fumbally Food">
+        <img src="images/5-7/5-7FumballyFood.jpg" alt="Fumbally Food">
+    </a>
+    <a href="images/5-7/5-7GriffithCollege.jpg" data-lightbox="gallery" data-title="Griffith College">
+        <img src="images/5-7/5-7GriffithCollege.jpg" alt="Griffith College">
+    </a>
+    <a href="images/5-7/5-7PlaneNav.jpg" data-lightbox="gallery" data-title="Plane Navigation">
+        <img src="images/5-7/5-7PlaneNav.jpg" alt="Plane Navigation">
+    </a>
+    <a href="images/5-7/5-7RiverLivey.jpg" data-lightbox="gallery" data-title="River Livey">
+        <img src="images/5-7/5-7RiverLivey.jpg" alt="River Livey">
+    </a>
+    
+
+
+
+
+
+</div>
 
 </main>
 
-
+<script src="dist/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
