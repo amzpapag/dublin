@@ -241,14 +241,27 @@ p{
   z-index: 1;
 }
 .container ul{
+  
   list-style-type: none;
   margin-left: -50px;
 
 }
 
-.f a:hover {
-  font-weight: bolder;
-  
+.f{
+ 
+}
+
+.f li{
+  text-decoration: none;
+  border: solid black 1px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.f li a {
+  text-decoration: none; /* Remove underline */
+  text-align: center;
 }
 
 .page-grid {
@@ -303,7 +316,7 @@ p{
   display: grid;
   grid-template-columns: 1fr;
   justify-content:center;
-  gap: 0px;
+  gap: 5px;
 }
 .gallery-grid img{
   background: #fff;
